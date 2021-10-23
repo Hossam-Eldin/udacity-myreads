@@ -8,8 +8,8 @@ export default function BookshelfChanger(props) {
     };
     return (
         <div className="book-shelf-changer">
-            <select value={props.shelf} onChange={handleChange}>
-                <option value="move" disabled>
+            <select value={value} onChange={handleChange}>
+                <option value="">
                     Move to...
                 </option>
                 <option value="currentlyReading">Currently Reading</option>

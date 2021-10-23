@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import BookCase from './BookCase'
+import { Link } from 'react-router-dom'
 
 export default function BookList(props) {
 
@@ -11,7 +12,9 @@ export default function BookList(props) {
             </div>
             <BookCase BookShelves={props.BookShelves} books={props.books} onMove={props.onMove} />
             <div className="open-search">
-                <button onClick={() => this.setState({ showSearchPage: true })}>Add a book</button>
+                <Link to="search">
+                <button >Add a book</button>
+                </Link>
             </div>
         </div>
     )
