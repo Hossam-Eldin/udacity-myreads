@@ -8,11 +8,8 @@ export default function Book(props) {
                 <div className="book-top">
                     <div
                         className="book-cover"
-                        style={{
-                            width: 128,
-                            height: 193,
-                            backgroundImage: `url(${props.book.imageLinks?.thumbnail})`,
-                        }}
+                        style={{width: 128,   height: 193,  
+                            backgroundImage: `url(${props.book.imageLinks && props.book.imageLinks.thumbnail })`,}}
                     />
                     <BookshelfChanger book={props.book} onMove={props.onMove}/>
                 </div>
