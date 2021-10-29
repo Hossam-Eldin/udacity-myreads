@@ -82,7 +82,7 @@ function BooksApp(props) {
         path="/search"
         render={() => (
           <BookSearch
-            books={searchBooks}
+            searchBooks={searchBooks}
             onMove={moveBook}
             myBooks={books}
             onSearch={search}

@@ -3,7 +3,7 @@ import Book from './Book'
 
 export default function SearchResults(props) {
 
-    const updatedBooks = props.books.map((book) => {
+    const updatedBooks = props.searchBooks.map((book) => {
         props.myBooks.map((b) => {
             if (b.id === book.id) {
                 book.shelf = b.shelf;

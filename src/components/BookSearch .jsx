@@ -8,7 +8,7 @@ export default function BookSearch (props) {
     return (
         <div className="search-books">
             <SearchBar onSearch={props.onSearch} onMove={props.onReset} />
-            <SearchResults books={props.books} onMove={props.onMove} myBooks={props.myBooks} />
+            <SearchResults searchBooks={props.searchBooks} onMove={props.onMove} myBooks={props.myBooks} />
         </div>
     )
 }
