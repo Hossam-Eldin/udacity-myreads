@@ -11,7 +11,7 @@ export default function Book(props) {
                         style={{width: 128,   height: 193,  
                             backgroundImage: `url(${props.book.imageLinks && props.book.imageLinks.thumbnail })`,}}
                     />
-                    <BookshelfChanger book={props.book} onMove={props.onMove}/>
+                    <BookshelfChanger book={props.book} onMove={props.onMove} shelf={props.shelf}/>
                 </div>
                 <div className="book-title">{props.book.title}</div>
                 <div className="book-authors">{props.book.authors &&  props.book.authors.join(', ')}</div>
